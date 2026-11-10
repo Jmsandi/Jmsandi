@@ -1,11 +1,9 @@
 name: Generate contribution snake
 
 on:
-  schedule:
-    - cron: "0 0 * * *" # daily
+  # Manual only for now (Actions is locked on this account). To re-enable,
+  # add back:  schedule: [{cron: "0 0 * * *"}]  and  push: {branches: [main]}
   workflow_dispatch:
-  push:
-    branches: [main, master]
 
 permissions:
   contents: write
